@@ -77,23 +77,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Dr. Mario de la Peña | Urólogo y Endourólogo en Zapopan" },
+      {
+        name: "description",
+        content:
+          "Dr. Mario de la Peña, cirujano urólogo con alta especialidad en Endourología en Zapopan, Jalisco. Atención de piedras en los riñones, próstata, salud urológica masculina y cirugía urológica.",
+      },
+      { name: "author", content: "Dr. Mario de la Peña" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Dr. Mario de la Peña" },
+      { property: "og:locale", content: "es_MX" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap",
+      },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
