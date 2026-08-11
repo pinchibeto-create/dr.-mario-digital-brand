@@ -1,37 +1,20 @@
-import logoPng from "@/assets/logo-dr-mario-de-la-pena.png.asset.json";
-import heroEditorial from "@/assets/hero-doctor-editorial.webp.asset.json";
-import heroScrubsVertical from "@/assets/doctor-scrubs-recorte-vertical.webp.asset.json";
-import retratoScrubs from "@/assets/doctor-scrubs-brazos-cruzados.webp.asset.json";
-import retratoTraje from "@/assets/doctor-traje-ejecutivo.webp.asset.json";
-import quirofanoPreparacion from "@/assets/quirofano-preparacion.webp.asset.json";
-import quirofanoRetrato from "@/assets/quirofano-retrato-horizontal.webp.asset.json";
-import quirofanoVertical from "@/assets/quirofano-cirujano-vertical.webp.asset.json";
-import equipoMedico from "@/assets/equipo-medico.webp.asset.json";
-import consultorio from "@/assets/doctor-bata-consultorio.webp.asset.json";
-import consultorioModelo from "@/assets/doctor-bata-modelo-anatomico.webp.asset.json";
-import iconProstata from "@/assets/prostata.webp.asset.json";
-import iconRinon from "@/assets/rinon-vias-urinarias.webp.asset.json";
-import iconMasculina from "@/assets/salud-urologica-masculina.webp.asset.json";
-import iconCirugia from "@/assets/cirugia-urologica.webp.asset.json";
-
 export const img = {
-  logo: logoPng.url,
-  heroEditorial: heroEditorial.url,
-  heroVertical: heroScrubsVertical.url,
-  retratoScrubs: retratoScrubs.url,
-  retratoTraje: retratoTraje.url,
-  quirofanoPreparacion: quirofanoPreparacion.url,
-  quirofanoRetrato: quirofanoRetrato.url,
-  quirofanoVertical: quirofanoVertical.url,
-  equipoMedico: equipoMedico.url,
-  consultorio: consultorio.url,
-  consultorioModelo: consultorioModelo.url,
-  iconProstata: iconProstata.url,
-  iconRinon: iconRinon.url,
-  iconMasculina: iconMasculina.url,
-  iconCirugia: iconCirugia.url,
+  logo: "/images/dr_mario_web_assets_v2/01_branding/logo-dr-mario-de-la-pena.png",
+  heroEditorial: "/images/dr_mario_web_assets_v2/02_hero/hero-doctor-editorial.webp",
+  heroVertical: "/images/dr_mario_web_assets_v2/02_hero/doctor-scrubs-recorte-vertical.webp",
+  retratoScrubs: "/images/dr_mario_web_assets_v2/03_retratos/doctor-scrubs-brazos-cruzados.webp",
+  retratoTraje: "/images/dr_mario_web_assets_v2/03_retratos/doctor-traje-ejecutivo.webp",
+  quirofanoPreparacion: "/images/dr_mario_web_assets_v2/04_quirofano/quirofano-preparacion.webp",
+  quirofanoRetrato: "/images/dr_mario_web_assets_v2/04_quirofano/quirofano-retrato-horizontal.webp",
+  quirofanoVertical: "/images/dr_mario_web_assets_v2/04_quirofano/quirofano-cirujano-vertical.webp",
+  equipoMedico: "/images/dr_mario_web_assets_v2/04_quirofano/equipo-medico.webp",
+  consultorio: "/images/dr_mario_web_assets_v2/06_consultorio/doctor-bata-consultorio.webp",
+  consultorioModelo: "/images/dr_mario_web_assets_v2/06_consultorio/doctor-bata-modelo-anatomico.webp",
+  iconProstata: "/images/dr_mario_web_assets_v2/05_iconos_servicios/prostata.webp",
+  iconRinon: "/images/dr_mario_web_assets_v2/05_iconos_servicios/rinon-vias-urinarias.webp",
+  iconMasculina: "/images/dr_mario_web_assets_v2/05_iconos_servicios/salud-urologica-masculina.webp",
+  iconCirugia: "/images/dr_mario_web_assets_v2/05_iconos_servicios/cirugia-urologica.webp",
 };
-
 /**
  * Número de WhatsApp del consultorio.
  * Vacío = el enlace abre WhatsApp con el mensaje listo y el paciente elige el contacto.
