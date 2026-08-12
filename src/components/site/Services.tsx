@@ -120,7 +120,7 @@ export function Services() {
                   height={325}
                   loading="lazy"
                   decoding="async"
-                  className="h-20 w-20 shrink-0 object-contain md:h-28 md:w-28"
+                  className="h-[120px] w-[120px] shrink-0 object-contain md:h-[168px] md:w-[168px]"
                 />
                 <span className="font-display text-3xl leading-none text-champagne">{s.n}</span>
               </div>
