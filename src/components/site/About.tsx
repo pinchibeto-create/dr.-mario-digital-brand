@@ -26,7 +26,7 @@ export function About() {
             height={1536}
             loading="lazy"
             decoding="async"
-            className="relative aspect-[3/4] w-full rounded-[12px] object-cover shadow-sm"
+            className="relative aspect-[3/4] w-full rounded-[12px] object-cover object-[center_top] shadow-sm md:aspect-[4/5] lg:aspect-[3/4]"
           />
           <div className="mt-8 hidden lg:block">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-primary">
