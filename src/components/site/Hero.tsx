@@ -1,5 +1,5 @@
-import { img, wa } from "@/lib/site";
-import { CtaOutline, CtaPrimary, WhatsAppIcon } from "./ui-bits";
+import { img, wa, PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "@/lib/site";
+import { CtaOutline, CtaPrimary, WhatsAppIcon, PhoneIcon } from "./ui-bits";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
@@ -27,12 +27,18 @@ export function Hero() {
               <p className="mt-5 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-primary">
                 Zapopan, Jalisco
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <CtaPrimary href={wa()} ariaLabel="Agendar cita por WhatsApp">
                   <WhatsAppIcon className="h-4 w-4" />
-                  Agendar cita
+                  Agendar por WhatsApp
                 </CtaPrimary>
-                <CtaOutline href="#doctor">Conocer al doctor</CtaOutline>
+                <a
+                  href={`tel:+52${PHONE_NUMBER}`}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 px-7 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-primary transition-colors hover:text-primary/70"
+                >
+                  <PhoneIcon className="h-4 w-4" />
+                  Llamar: {PHONE_NUMBER_FORMATTED}
+                </a>
               </div>
             </Reveal>
           </div>

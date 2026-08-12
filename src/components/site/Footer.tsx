@@ -1,5 +1,5 @@
-import { img, social, wa } from "@/lib/site";
-import { WhatsAppIcon } from "./ui-bits";
+import { img, social, wa, PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "@/lib/site";
+import { WhatsAppIcon, PhoneIcon } from "./ui-bits";
 
 const footerNav = [
   { label: "Inicio", href: "#inicio" },
@@ -29,6 +29,24 @@ export function Footer() {
             <p className="mt-3 text-sm text-stone">Cirujano Urólogo</p>
             <p className="text-sm text-stone">Alta especialidad en Endourología</p>
             <p className="mt-3 text-xs text-stone/70">Cédula de especialidad: 12227073</p>
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href={`tel:+52${PHONE_NUMBER}`}
+                className="flex items-center gap-2 text-sm text-stone transition-colors hover:text-champagne"
+              >
+                <PhoneIcon className="h-4 w-4" />
+                {PHONE_NUMBER_FORMATTED}
+              </a>
+              <a
+                href={wa()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-stone transition-colors hover:text-champagne"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                WhatsApp
+              </a>
+            </div>
           </div>
 
           <nav aria-label="Navegación del pie de página">

@@ -4,8 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { social, wa } from "@/lib/site";
-import { CtaPrimary, Eyebrow, WhatsAppIcon } from "./ui-bits";
+import { social, wa, PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "@/lib/site";
+import { CtaPrimary, Eyebrow, WhatsAppIcon, PhoneIcon } from "./ui-bits";
 import { Reveal } from "./Reveal";
 
 const faqs = [
@@ -157,15 +157,22 @@ export function Contact() {
             Si tienes síntomas, dudas sobre tu salud urológica o necesitas una segunda opinión,
             agenda una consulta.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <CtaPrimary
               href={wa()}
               ariaLabel="Agendar cita por WhatsApp"
               className="bg-champagne text-primary hover:bg-white"
             >
               <WhatsAppIcon className="h-4 w-4" />
-              Agendar por WhatsApp
+              WhatsApp
             </CtaPrimary>
+            <a
+              href={`tel:+52${PHONE_NUMBER}`}
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/20 px-7 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-white/10"
+            >
+              <PhoneIcon className="h-4 w-4" />
+              Llamar al consultorio: {PHONE_NUMBER_FORMATTED}
+            </a>
           </div>
           <p className="mt-10 border-t border-white/10 pt-6 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-stone">
             Zapopan, Jalisco
