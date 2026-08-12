@@ -20,11 +20,13 @@ export const img = {
  * Vacío = el enlace abre WhatsApp con el mensaje listo y el paciente elige el contacto.
  * Colocar aquí el número con lada internacional (ej. "5213312345678") cuando esté confirmado.
  */
-export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_NUMBER = "523333918900";
+export const PHONE_NUMBER = "3333918900";
+export const PHONE_NUMBER_FORMATTED = "33 3391 8900";
 
 export const waMessages = {
   general:
-    "Hola, encontré la página del Dr. Mario de la Peña y quisiera solicitar información para agendar una consulta urológica.",
+    "Hola, Dr. Mario de la Peña. Encontré su página web y me gustaría solicitar información para agendar una consulta.",
   prostata:
     "Hola, encontré la página del Dr. Mario de la Peña y quisiera solicitar una valoración relacionada con próstata.",
   rinon:
