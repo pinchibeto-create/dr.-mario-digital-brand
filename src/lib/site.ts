@@ -10,10 +10,10 @@ export const img = {
   equipoMedico: "/images/dr_mario_web_assets_v2/04_quirofano/equipo-medico.webp",
   consultorio: "/images/dr_mario_web_assets_v2/06_consultorio/doctor-bata-consultorio.webp",
   consultorioModelo: "/images/dr_mario_web_assets_v2/06_consultorio/doctor-bata-modelo-anatomico.webp",
-  iconProstata: "/images/dr_mario_web_assets_v2/05_iconos_servicios/prostata.webp",
-  iconRinon: "/images/dr_mario_web_assets_v2/05_iconos_servicios/rinon-vias-urinarias.webp",
-  iconMasculina: "/images/dr_mario_web_assets_v2/05_iconos_servicios/salud-urologica-masculina.webp",
-  iconCirugia: "/images/dr_mario_web_assets_v2/05_iconos_servicios/cirugia-urologica.webp",
+  iconProstata: "/images/dr_mario_web_assets_v2/05_iconos_servicios/icono_prostata.webp",
+  iconRinon: "/images/dr_mario_web_assets_v2/05_iconos_servicios/icono_rinones.webp",
+  iconMasculina: "/images/dr_mario_web_assets_v2/05_iconos_servicios/icono_salud_masculina.webp",
+  iconCirugia: "/images/dr_mario_web_assets_v2/05_iconos_servicios/icono_procedimiento.webp",
 };
 /**
  * Número de WhatsApp del consultorio.
